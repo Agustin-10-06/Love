@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(45deg, #ff4d6d, #ffd6e0);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden
+}
+
+.hero {
+    padding: 60px
+}
+
+.hidden {
+    display: none
+}
+
+.gallery {
+    display: flex;
+    overflow: auto;
+    gap: 10px;
+    justify-content: center
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px;
+    background: #fff3
+}
+
+.heart {
+    position: fixed;
+    top: -20px;
+    animation: f 8s linear infinite
+}
+
+@keyframes f {
+    to {
+        transform: translateY(110vh)
+    }
+}
+
+button {
+    padding: 14px 24px;
+    border-radius: 30px;
+    border: none
+}
+
+#text {
+    max-width: 800px;
+    margin: 20px auto;
+    white-space: pre-wrap;
+    font-size: 20px;
+    line-height: 1.8;
+    padding: 20px
+}
+.slider{
+    width:min(90vw,420px);
+    aspect-ratio:9/16;
+    margin:30px auto;
+    overflow:hidden;
+    border-radius:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.slides{
+    display:flex;
+    width:100%;
+    height:100%;
+    transition:transform .8s ease-in-out;
+}
+
+.slides img{
+    flex:0 0 100%;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
